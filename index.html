@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Metadata for the document -->
+    <meta charset="utf-8">
+    <meta name="author" content="Tarandeep Kaur">
+    <meta name="description" content="Tarandeep's personal website">
+    <meta name="format-detection" content="telephone=no">
+    <title>WEB222 Final Assessment</title>
+
+    <!-- External stylesheet links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Secular+One&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyles.css" type="text/css">
+</head>
+
+<body>
+        <!-- JavaScript file inclusion -->
+        <script src="script.js"></script>
+        <main>
+            <!-- Professional Card Section -->
+            <div id="ProfessionalCard">
+                <img src="images/personal-image.jpeg" alt="Tarandeep Kaur">
+                <div>
+                    <h1>Tarandeep Kaur</h1>
+                    <p>Administration Services Assistant</p>
+
+                    <!-- Download button for the resume -->
+                    <a href="personal/Tarandeep Kaur_Enrolment Services Assistant_Resume.pdf" download="resume">
+                        <button class="download-button" onclick="downloadResume()">Resume</button>                         
+                    </a>
+
+                    <!-- Button to navigate to the Contact section -->
+                    <a href="#contact">
+                        <button type="button" tabindex="1">
+                            Contact Me
+                        </button>
+                    </a>                   
+                </div>
+            </div>
+
+            <!-- Personal Info Section -->
+            <div id="personal-info">
+                <div class="info">
+                    <h2 class="i-headings">About Me and Academic Honesty</h2>
+                    <p>
+                        Hello! I'm Tarandeep Kaur, a 19-year-old from the vibrant land of Punjab, India. Currently, I'm pursuing a 
+                        degree in Computer Programming at Seneca College, Newnham campus. My journey in the world of technology began 
+                        with a background in office administration at an immigration company, where I gained valuable experiences.
+                        The decision to dive into computer programming stems from my desire to enhance my technical abilities and 
+                        explore new pathways.  I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+                        No part of this assessment has been copied manually or electronically from any other source 
+                        (including web sites) except for the information supplied by the WEB222 instructors and / or 
+                        made available in this assessment for my use. I also declare that no part of this assignment has 
+                        been distributed to other students.
+                    </p>
+                    <p>
+                    Date: 12 December 2023
+                    </p>
+
+                </div>
+
+                <!-- Basic Info Section -->
+                <div class="info">
+                    <h2 class="i-headings" id="basic-info">Basic Information</h2>
+                    <div id="basic-personal-info">
+                        <div id="i-header">
+                            <p>Name:</p> 
+                            <p>Email:</p>
+                            <p>Course:</p> 
+                            <p>Section:</p>
+                            <p>Student ID:</p>
+                            <p>Instructor:</p>  
+                         </div>
+
+                        <div id="i-content">
+                            <p>Tarandeep Kaur</p>
+                            <p>tarandeep-kaur6@myseneca.ca</p>
+                            <p>WEB222</p>
+                            <p>NFF</p>
+                            <p>139389225</p>
+                            <p>Mark Meritt</p>
+                        </div>   
+                    </div>         
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="other-sections">
+                <h2>Educational Background</h2>
+                <div class="school">
+                    <div class="program-duration">
+                        <p>2023-24</p>
+                        <h3>Post Secondary Diploma</h3>
+                    </div>
+
+                    <div class="school-info">
+                        <h3>Computer Programming</h3>
+                        <small>Seneca College</small>
+                        <p>Expected Graduation in Summer 2024</p>
+                    </div>
+                </div>
+
+                <div class="school">
+                    <div class="program-duration">
+                        <p>2020-22</p>
+                        <h3>High School Diploma</h3>
+                    </div>
+
+                    <div class="school-info">
+                        <h3>Major in Science</h3>
+                        <small>Army Public School, India</small>
+                        <p>Appeared in Merit List of the Country</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="other-sections" id="contact">
+                <h2>Contact Form</h2>
+                <p><span>*</span> Required Field</p>
+                <form id="contact-form" action="https://httpbin.org/post" method="POST">
+                    <label for="full-name">Full Name <span>*</span></label>
+                    <input id="full-name" name="full-name" autocomplete="name" type="text" placeholder="Your Full Name" title="Enter your full name" tabindex="2" required="">
+
+                    <label for="email">Email <span>*</span></label>
+                    <input id="email" name="email" autocomplete="email" type="email" placeholder="username@email.com" pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}$" title="Enter an email address" tabindex="3" required="">
+
+                    <label for="phone">Phone Number <span>*</span></label>
+                    <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" title="Enter your phone number" pattern="[0-9]{10}" tabindex="4" required="">
+
+                    <label for="city">City <span>*</span></label>
+                    <input id="city" name="city" title="Enter City" placeholder="e.g Toronto" list="cities" tabindex="5" required="">
+                    <datalist id="cities">
+                        <option value="Toronto"></option>
+                        <option value="Ottawa"></option>
+                        <option value="Surrey"></option>
+                        <option value="Waterloo"></option>
+                        <option value="London"></option>
+                        <option value="Vancouver"></option>
+                        <option value="Windsor"></option>
+                        <option value="Barrie"></option>
+                        <option value="Other city"></option>
+                    </datalist>
+
+                    <label for="postal">Postal Code <span>*</span></label>
+                    <input id="postal" name="postal" autocomplete="postal-code" type="text" placeholder="A1A 1A1" pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$" title="Enter valid Canadian postal code" tabindex="6" required="">
+
+                    <label>Subject <span>*</span></label>
+                    <div id="subject">
+                        
+                        <div>
+                            <input id="question" name="subject" type="radio" tabindex="7" required="">
+                            <label for="question">Question</label>
+                        </div>
+                        
+                        <div>
+                            <input id="comment" name="subject" type="radio" tabindex="8" required="">
+                            <label for="comment">Comment</label>
+                        </div>
+                        
+                        <div>
+                            <input id="hiring" name="subject" type="radio" tabindex="9" required="">
+                            <label for="hiring">Hiring</label>
+                        </div>
+
+                        <label id="rate-label" for="rate" hidden="">Hourly Rate <span>*</span></label>
+                        <input id="rate" name="rate" type="text" title="Enter value in CAD" pattern="^\$?\d+(\.\d{2})?$" placeholder="$30" ;="" tabindex="10" hidden="">
+                    </div>
+                   
+                    <label for="message">Message <span>*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter message here" maxlength="2000" tabindex="11" required=""></textarea>
+
+                    <div id="form-button">
+                        <input type="submit" name="submit" value="Submit" tabindex="12">
+                        <input type="reset" name="reset" value="Reset" tabindex="13">
+                    </div>
+                </form>
+            </div>
+        </main>   
+</body>
+</html>
