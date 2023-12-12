@@ -43,9 +43,6 @@ window.onload = function(){
 
 };
 
-const question = document.querySelector('#question');
-const hiring = document.querySelector('#hiring');
-const form = document.querySelector('#contact-form');
 
 function hideRate() {
     if(!rateHidden){
