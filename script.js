@@ -1,3 +1,10 @@
+const form = document.querySelector('#contact-form');
+const question = document.querySelector('#question');
+const comment = document.querySelector('#comment');
+const hiring = document.querySelector('#hiring');
+let rateLabel = document.querySelector('#rate-label');
+let rate = document.querySelector('#rate');
+let rateHidden = true;
 
 window.onload = function(){
     hiring.addEventListener('click', function (){
