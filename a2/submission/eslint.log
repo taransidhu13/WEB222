@@ -1,0 +1,10 @@
+
+> web222-assignment-2@7.0.0 eslint
+> eslint src/**/*.js
+
+
+C:\Users\kaurt\web222\a2\src\observations.js
+  271:45  error  Parsing error: Unexpected token .
+
+✖ 1 problem (1 error, 0 warnings)
+
